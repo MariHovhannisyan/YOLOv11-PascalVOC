@@ -32,33 +32,35 @@ YOLOv11-Obj-Det-PascalVOC/
 
 <h2 align="center"><strong>3. Results & Visualizations</strong></h2>
 
+
 ## 3.1 Benchmark Comparison
 
 <p align="center">
-  <img inference="viz_out/benchmark" width="900">
-</p>
+  <a href="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/viz_out/benchmark.png">
+    <img src="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/viz_out/benchmark.png" width="850">
+  </a><br>
   <em>Comparison of best achieved results against typical benchmark ranges</em>
 </p>
 
 **Summary:**
 - **Accuracy (mAP@0.5): 0.857**
 - **mAP@0.5:0.95: 0.692**
-- Performance exceeds or matches the upper bound of common benchmark ranges.
+- Results exceed or match common benchmark performance.
 
 ---
 
 ## 3.2 Training & Validation Loss Curves
 
 <p align="center">
-  <a href="[loss-curves-img]">
-    <img src="[loss-curves-img]" width="900">
+  <a href="https://raw.githubusercontent.com/USERNAME/YOLOv11-Obj-Det-PascalVOC/main/viz_out/loss_curves.png">
+    <img src="https://raw.githubusercontent.com/USERNAME/YOLOv11-Obj-Det-PascalVOC/main/viz_out/loss_curves.png" width="900">
   </a><br>
   <em>Training and validation loss curves for Box, Classification, and DFL losses</em>
 </p>
 
 **Observations:**
-- Steady decrease in both training and validation losses.
-- No visible divergence between train and validation curves.
+- Consistent loss reduction across epochs.
+- Training and validation curves remain close.
 - Indicates stable convergence with minimal overfitting.
 
 ---
@@ -66,50 +68,40 @@ YOLOv11-Obj-Det-PascalVOC/
 ## 3.3 Separated Loss Analysis
 
 <p align="center">
-  <a href="[separated-losses-img]">
-    <img src="[separated-losses-img]" width="900">
+  <a href="https://raw.githubusercontent.com/USERNAME/YOLOv11-Obj-Det-PascalVOC/main/viz_out/Losses.png">
+    <img src="https://raw.githubusercontent.com/USERNAME/YOLOv11-Obj-Det-PascalVOC/main/viz_out/Losses.png" width="900">
   </a><br>
   <em>Separated training and validation loss trends</em>
 </p>
 
 **Details:**
-- **Box Loss:** Gradual and consistent reduction.
-- **Classification Loss:** Rapid early improvement, followed by refinement.
-- **DFL Loss:** Smooth decline, improving bounding box quality.
+- **Box Loss:** Smooth and steady decline.
+- **Classification Loss:** Rapid early improvement.
+- **DFL Loss:** Gradual reduction, improving localization quality.
 
 ---
 
 ## 3.4 Accuracy & Metrics Curves
 
 <p align="center">
-  <a href="[metrics-img]">
-    <img src="[metrics-img]" width="950">
+  <a href="https://raw.githubusercontent.com/USERNAME/YOLOv11-Obj-Det-PascalVOC/main/viz_out/metrics_accuracy_curves.png">
+    <img src="https://raw.githubusercontent.com/USERNAME/YOLOv11-Obj-Det-PascalVOC/main/viz_out/metrics_accuracy_curves.png" width="950">
   </a><br>
   <em>Precision, Recall, mAP@0.5 (Accuracy), and mAP@0.5:0.95 vs Epoch</em>
 </p>
 
 **Key Results:**
-- **Best Accuracy (mAP@0.5):** `0.857` at **Epoch 15**
+- **Best mAP@0.5:** `0.857` at **Epoch 15**
 - **Best mAP@0.5:0.95:** `0.692` at **Epoch 25**
-- Balanced precision and recall across epochs.
+- Precision and recall remain balanced throughout training.
 
 ---
 
 ## 3.5 Per-Class Performance
 
 <p align="center">
-  <a href="[per-class-img]">
-    <img src="[per-class-img]" width="950">
+  <a href="https://raw.githubusercontent.com/USERNAME/YOLOv11-Obj-Det-PascalVOC/main/viz_out/Per-class%20mAP.png">
+    <img src="https://raw.githubusercontent.com/USERNAME/YOLOv11-Obj-Det-PascalVOC/main/viz_out/Per-class%20mAP.png" width="950">
   </a><br>
   <em>Per-class mAP@0.5:0.95 distribution</em>
 </p>
-
-**Insights:**
-- Most classes achieve **mAP > 0.6**
-- Multiple classes exceed **0.8 mAP**
-- Lower-performing classes indicate potential data imbalance or complexity.
-
----
-
-
-
