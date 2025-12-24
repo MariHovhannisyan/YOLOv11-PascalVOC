@@ -35,9 +35,8 @@ YOLOv11-Obj-Det-PascalVOC/
 ## 3.1 Benchmark Comparison
 
 <p align="center">
-  <a href="[https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/viz_out/benchmark.png]">
-    <img src="[benchmark-img]" width="850">
-  </a><br>
+  <img inference="viz_out/benchmark" width="900">
+</p>
   <em>Comparison of best achieved results against typical benchmark ranges</em>
 </p>
 
