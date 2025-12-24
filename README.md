@@ -113,79 +113,37 @@ Detection can be performed using **two different input sources**, depending on y
 ## 4.1 Example: Detection via Video File
 
 <p align="center">
-  <a href="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/video.png">
-    <img src="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/video.png" width="900">
+  <a href="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/VideoFile.png">
+    <img src="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/VideoFile.png" width="900">
   </a><br>
-  <em>Sample video detection output — bounding boxes and class labels appear on every frame</em>
+  <em>Sample video detection output - bounding boxes and class labels appear on every frame</em>
 </p>
 
 The model processes the video sequentially and consistently detects objects across the entire clip.
 
-👉 **Click the image above to view results of detection via a video file**
-
 ---
 
-## 4.3 Example: Detection via Webcam
+## 4.2. Detection via Webcam
 
 <p align="center">
-  <a href="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/live-cam.png">
-    <img src="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/live-cam.png" width="900">
+  <a href="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/WebCam.png">
+    <img src="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/WebCam.png" width="900">
   </a><br>
-  <em>Sample webcam detection output — real-time detection using a live camera feed</em>
+  <em>Sample webcam detection output - real-time detection using a live camera feed</em>
 </p>
 
 In webcam mode, the model performs inference in real time, delivering fast and stable detection results.
 
 ---
 
-## 4.4 CLI (Command Line Interface)
-
-The demo application is executed via a **Command Line Interface (CLI)**, enabling easy control and integration.
-
-### ▶️ Webcam Detection
-
-```bash
-python webcam-script.py --source webcam
-```
-
-This command:
-- Starts real-time detection from the webcam
-- Displays detection results live on screen
-
----
-
-### ▶️ Video File Detection
-
-```bash
-python webcam-script.py --source video --path path/to/video.mp4
-```
-
-This command:
-- Loads and processes the specified video file
-- Displays bounding boxes and class labels on each frame
-
----
-
-## 4.5 Terminal Output During Webcam Detection
+## 4.3 Terminal Output During Webcam Detection
 
 <p align="center">
-  <a href="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/CLI.png">
-    <img src="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/CLI.png" width="900">
+  <a href="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/CLI.png">
+    <img src="https://github.com/MariHovhannisyan/YOLOv11-PascalVOC/blob/main/inference/CLI.png" width="900">
   </a><br>
   <em>Terminal output showing inference speed, frame details, and detected objects</em>
 </p>
 
-During webcam detection, the terminal displays:
-- Inference speed (FPS)
-- Frame index and resolution
-- Detected object classes with confidence scores
 
----
-
-## 4.6 Summary
-
-- The demo app supports both **real-time** and **offline** detection modes
-- CLI-based execution ensures simplicity and flexibility
-- The YOLOv11 model delivers **fast, stable, and reliable inference**
-- Suitable for demos, testing, and real-world deployment scenarios
 
